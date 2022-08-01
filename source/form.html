@@ -40,15 +40,15 @@
                 <legend class="visually-hidden">Личные данные</legend>
                 <div class="form-program__item">
                   <label class="form-program__label" for="name">Имя:*</label>              
-                  <input class="form-program__control input" type="text" name="name" id="name" placeholder="Барсик">
+                  <input class="form-program__text-input" type="text" name="name" id="name" placeholder="Барсик">
                 </div>
                 <div class="form-program__item">
                   <label class="form-program__label" for="weight">Вес(кг):*</label>
-                  <input class="form-program__control input" type="text" name="weight" id="weight" placeholder="7">
+                  <input class="form-program__text-input" type="text" name="weight" id="weight" placeholder="7">
                 </div>
                 <div class="form-program__item">
                   <label class="form-program__label" for="age">Возраст(лет):</label>
-                  <input class="form-program__control input" type="text" name="age" id="age" placeholder="7">
+                  <input class="form-program__text-input" type="text" name="age" id="age" placeholder="7">
                 </div>
             </fieldset>
 
@@ -57,19 +57,19 @@
               <ul class="form-program__list">
                 <li class="form-program__item">
                   <label class="form-program__radio-label">
-                    <input class="form-program__radio-control visually-hidden input" type="radio" name="program" value="slim" checked>
+                    <input class="form-program__radio-input visually-hidden" type="radio" name="program" value="slim" checked>
                     <span class="form-program__radio-text">Похудение</span>
                   </label>
                 </li>
                 <li class="field__item radio">
                   <label class="form-program__radio-label">
-                    <input class="form-program__radio-control visually-hidden input" type="radio" name="program" value="pro">
+                    <input class="form-program__radio-input visually-hidden" type="radio" name="program" value="pro">
                     <span class="form-program__radio-text">Набор массы</span>
                   </label>
                 </li>
                 <li class="field__item radio">
                   <label class="form-program__radio-label">
-                    <input class="form-program__radio-control visually-hidden input" type="radio" name="program" value="unknown">
+                    <input class="form-program__radio-input visually-hidden" type="radio" name="program" value="unknown">
                     <span class="form-program__radio-text">Не знаю(нужен ваш совет)</span>
                   </label>
                 </li>
@@ -79,45 +79,45 @@
             <fieldset class="form-program__fieldset">
               <legend class="form-program__fieldset-heading">Контактные данные (владельца кота)</legend>
               <div class="form-program__item">
-                <label class="form-program__conatct-label" for="email">E-mail:*</label>
-                <input class="form-program__contact-control input"  type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+                <label class="form-program__label" for="email">E-mail:*</label>
+                <input class="form-program__text-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
               </div>
               <div class="form-program__item">
-                <label class="form-program__conatct-label" for="phone">Телефон:*</label>
-                <input class="form-program__contact-control input"  type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+                <label class="form-program__label" for="phone">Телефон:*</label>
+                <input class="form-program__text-input" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90">
               </div>
             </fieldset>
             
             <fieldset class="form-program__fieldset">
               <label class="form-program__fieldset-heading" for="comment">Комментарий</label>
-                <textarea class="form-program__review-text" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
+                <textarea class="form-program__textarea" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
             </fieldset>
             
             <fieldset class="form-program__fieldset">
-              <legend class="form-program__field-extra-heading">Дополнительно:</legend>
+              <legend class="form-program__fieldset-heading">Дополнительно:</legend>
                 <ul class="form-program__list">
                   <li class="form-program__item">
-                    <label class="form-program__field-extra-label">
-                      <input class="form-program__field-extra-control input" type="checkbox" name="sweetener" checked>
-                      <span class="form-program__field-extra-text">сахарозаменитель</span>
+                    <label class="form-program__checkbox-label">
+                      <input class="form-program__checkbox-input visually-hidden" type="checkbox" name="sweetener" checked>
+                      <span class="form-program__checkbox-text">сахарозаменитель</span>
                     </label>
                   </li>
                   <li class="form-program__item">
-                    <label class="form-program__field-extra-label">
-                      <input class="form-program__field-extra-control input" type="checkbox" name="water">
-                      <span class="form-program__field-extra-text">питьевая вода</span>
+                    <label class="form-program__checkbox-label">
+                      <input class="form-program__checkbox-input visually-hidden" type="checkbox" name="water">
+                      <span class="form-program__checkbox-text">питьевая вода</span>
                     </label>
                   </li>
                   <li class="form-program__item">
-                    <label class="form-program__field-extra-label">
-                      <input class="form-program__field-extra-control input" type="checkbox" name="milk">
-                      <span class="form-program__field-extra-text">молоко</span>
+                    <label class="form-program__checkbox-label">
+                      <input class="form-program__checkbox-input visually-hidden" type="checkbox" name="milk">
+                      <span class="form-program__checkbox-text">молоко</span>
                     </label>
                   </li>
                   <li class="form-program__item">
-                    <label class="form-program__field-extra-label">
-                      <input class="orm-program__field-extra-control input" type="checkbox" name="vitamins">
-                      <span class="form-program__field-extra-text">витамины</span>
+                    <label class="form-program__checkbox-label">
+                      <input class="form-program__checkbox-input visually-hidden" type="checkbox" name="vitamins">
+                      <span class="form-program__checkbox-text">витамины</span>
                     </label>
                   </li>
                 </ul>
