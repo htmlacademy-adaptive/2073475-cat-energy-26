@@ -6,7 +6,7 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <a href="main-header__logo logo">
+      <a class="main-header__logo logo" href="index.html">
         <img class="logo__image" src="img/logo_mobile.svg" width="33" height="38" alt="Логотип Кэт энержди">
         <img class="logo__text" src="img/logo_2.svg" width="100" height="18" alt="Кэт энержди">
       </a>
@@ -33,98 +33,98 @@
     <!-- Form -->
 
     <main class="form-wrapper">
-        <h1 class="form__heading">Подбор программы</h1>
-        <form class="form-program" action="http//:echo.htmlacademy.ru" method="get">
-            <h3 class="form-program__heading">Заполните анкету, и мы подберем программу питания для вашего кота</h3>
-            <fieldset class="form-program__field field">                           
+        <h1 class="form-wrapper__heading">Подбор программы</h1>
+        <form class="form-program" action="#" method="get">
+            <h2 class="form-program__heading">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+            <fieldset class="form-program__fieldset">                           
                 <legend class="visually-hidden">Личные данные</legend>
-                <div class="field-form">
-                  <label class="field-form__label" for="name">Имя:*</label>              
-                  <input class="field-form__control input" type="text" name="name" id="name" placeholder="Барсик">
+                <div class="form-program__item">
+                  <label class="form-program__label" for="name">Имя:*</label>              
+                  <input class="form-program__control input" type="text" name="name" id="name" placeholder="Барсик">
                 </div>
-                <div class="field-form">
-                  <label class="field-form__label" for="weight">Вес(кг):*</label>
-                  <input class="field-form__control input" type="text" name="weight" id="weight" placeholder="7">
+                <div class="form-program__item">
+                  <label class="form-program__label" for="weight">Вес(кг):*</label>
+                  <input class="form-program__control input" type="text" name="weight" id="weight" placeholder="7">
                 </div>
-                <div class="field__form">
-                  <label class="field-form__label" for="age">Возраст(лет):</label>
-                  <input class="field-form__control input" type="text" name="age" id="age" placeholder="7">
+                <div class="form-program__item">
+                  <label class="form-program__label" for="age">Возраст(лет):</label>
+                  <input class="form-program__control input" type="text" name="age" id="age" placeholder="7">
                 </div>
             </fieldset>
 
-            <fieldset class="form-program__field field">
+            <fieldset class="form-program__fieldset">
               <legend class="visually-hidden">Программа</legend>
-              <ul class="field__list">
-                <li class="field__item radio">
-                  <label class="radio__label">
-                    <input class="radio__control input" type="radio" name="slim" value="slim" checked>
-                    <span class="radio__text">Похудение</span>
+              <ul class="form-program__list">
+                <li class="form-program__item">
+                  <label class="form-program__radio-label">
+                    <input class="form-program__radio-control visually-hidden input" type="radio" name="program" value="slim" checked>
+                    <span class="form-program__radio-text">Похудение</span>
                   </label>
                 </li>
                 <li class="field__item radio">
-                  <label class="radio__label">
-                    <input class="radio__control input" type="radio" name="pro" value="pro">
-                    <span class="radio__text">Набор массы</span>
+                  <label class="form-program__radio-label">
+                    <input class="form-program__radio-control visually-hidden input" type="radio" name="program" value="pro">
+                    <span class="form-program__radio-text">Набор массы</span>
                   </label>
                 </li>
                 <li class="field__item radio">
-                  <label class="radio__label">
-                    <input class="radio__control input" type="radio" name="unknown" value="unknown">
-                    <span class="radio__text">Не знаю(нужен ваш совет)</span>
+                  <label class="form-program__radio-label">
+                    <input class="form-program__radio-control visually-hidden input" type="radio" name="program" value="unknown">
+                    <span class="form-program__radio-text">Не знаю(нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form-program__field field">
-              <legend class="field__heading">Контактные данные (владельца кота)</legend>
-              <div class="field__email email">
-                <label class="email__label" for="email">E-mail:*</label>
-                <input class="email__control input"  type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+            <fieldset class="form-program__fieldset">
+              <legend class="form-program__fieldset-heading">Контактные данные (владельца кота)</legend>
+              <div class="form-program__item">
+                <label class="form-program__conatct-label" for="email">E-mail:*</label>
+                <input class="form-program__contact-control input"  type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
               </div>
-              <div class="field__phone phone">
-                <label class="phone__label" for="phone">Телефон:*</label>
-                <input class="phone__control input"  type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+              <div class="form-program__item">
+                <label class="form-program__conatct-label" for="phone">Телефон:*</label>
+                <input class="form-program__contact-control input"  type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90">
               </div>
             </fieldset>
             
-            <fieldset class="form-program__field review">
-              <label class="review__label" for="comment">Текст отзыва</label>
-                <textarea class="review__text" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
+            <fieldset class="form-program__fieldset">
+              <label class="form-program__fieldset-heading" for="comment">Комментарий</label>
+                <textarea class="form-program__review-text" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
             </fieldset>
             
-            <fieldset class="form-program__field field-extra">
-              <legend class="field-extra__heading">Дополнительно:</legend>
-                <ul class="field-extra__list">
-                  <li class="field-extra__item">
-                    <label class="field-extra__label">
-                      <input class="field-extra__control input" type="checkbox" name="sweetener" checked>
-                      <span class="field-extra__text">сахарозаменитель</span>
+            <fieldset class="form-program__fieldset">
+              <legend class="form-program__field-extra-heading">Дополнительно:</legend>
+                <ul class="form-program__list">
+                  <li class="form-program__item">
+                    <label class="form-program__field-extra-label">
+                      <input class="form-program__field-extra-control input" type="checkbox" name="sweetener" checked>
+                      <span class="form-program__field-extra-text">сахарозаменитель</span>
                     </label>
                   </li>
-                  <li class="field-extra__item">
-                    <label class="field-extra__label">
-                      <input class="field-extra__control" type="checkbox" name="water">
-                      <span class="field-extra__text">питьевая вода</span>
+                  <li class="form-program__item">
+                    <label class="form-program__field-extra-label">
+                      <input class="form-program__field-extra-control input" type="checkbox" name="water">
+                      <span class="form-program__field-extra-text">питьевая вода</span>
                     </label>
                   </li>
-                  <li class="field-extra__item">
-                    <label class="field-extra__label">
-                      <input class="field-extra__control" type="checkbox" name="milk">
-                      <span class="field-extra__text">молоко</span>
+                  <li class="form-program__item">
+                    <label class="form-program__field-extra-label">
+                      <input class="form-program__field-extra-control input" type="checkbox" name="milk">
+                      <span class="form-program__field-extra-text">молоко</span>
                     </label>
                   </li>
-                  <li class="field-extra__item">
-                    <label class="field-extra__label">
-                      <input class="field-extra__control" type="checkbox" name="vitamins">
-                      <span class="field-extra__text">витамины</span>
+                  <li class="form-program__item">
+                    <label class="form-program__field-extra-label">
+                      <input class="orm-program__field-extra-control input" type="checkbox" name="vitamins">
+                      <span class="form-program__field-extra-text">витамины</span>
                     </label>
                   </li>
                 </ul>
             </fieldset>
 
             <button class="button button--primary" type="submit">отправить заявку</button>
-            <p>* — Обязательные поля</p>
+            <p class="form-program__footnote">* — Обязательные поля</p>
         </form>
 
         <!-- Contacts -->
@@ -144,7 +144,7 @@
     
     <footer class="main-footer">
       <div class="main-footer__wrapper">        
-        <a href="main-footer__logo logo">
+        <a class="main-footer__logo logo" href="index.html">
           <img class="logo__text" src="img/logo_2.svg" width="100" height="18" alt="Кэт энержди">
         </a>
       </div>
