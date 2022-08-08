@@ -1,0 +1,88 @@
+.form-program__heading {
+  margin: 0;
+  margin-bottom: 39px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-program__label {
+  margin-right: 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-program__text-input {
+  margin: 0;
+  padding: 13px 50px 14px 15px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: rgb(68, 68, 68);
+  }
+}
+
+.form-program__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-program__item-radio {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.form-program__radio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-program__fieldset-heading {
+  margin: 0;
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form-program__textarea {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 1);
+  text-transform: uppercase;
+}
+
+.form-program__item-checkbox {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.form-program__checkbox-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-program__footnote {
+  margin: 0;
+  margin-top: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}

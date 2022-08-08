@@ -1,1 +1,23 @@
 // Начните писать стили здесь
+@use "./blocks/page-body.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/logo.scss";
+@use "./blocks/main-wrapper.scss";
+@use "./blocks/slogan.scss";
+@use "./blocks/programs.scss";
+@use "./blocks/info.scss";
+@use "./blocks/stats.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/copyright.scss";
+@use "./blocks/button.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/form-program.scss";
+@use "./blocks/extra-product.scss";
+@use "./blocks/gift.scss";
+@use "./blocks/social.scss";
+@use "./blocks/catalog-wrapper.scss";
+@use "./blocks/card-product.scss";
+@use "./blocks/show-more.scss";
+@use "./blocks/form-wrapper.scss";
+@use "./blocks/button-programs.scss";
