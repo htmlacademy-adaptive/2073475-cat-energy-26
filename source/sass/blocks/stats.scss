@@ -12,6 +12,7 @@
 .stats__heading {
   margin: 0;
   margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -19,7 +20,6 @@
 
 .stats__text {
   font-family: "Arial", sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: rgba(68, 68, 68, 1);
@@ -28,7 +28,7 @@
 .stats__text-big {
   margin: 0;
   margin-bottom: 8px;
-  font-weight: 400;
+  font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -37,7 +37,6 @@
 .stats__text-small {
   margin: 0;
   font-family: "Arial", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 100%;
   color: rgba(68, 68, 68, 1);
@@ -47,7 +46,6 @@
   margin: 0;
   margin-top: 20px;
   margin-bottom: 40px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }

@@ -4,13 +4,27 @@
   font-size: 14px;
   line-height: 18px;
   color: rgba(252, 252, 252, 1);
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   background-color: rgba(104, 183, 56, 1);
   border: none;
 
+  &--primary {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   &--show-more {
+    padding: 10px 94px;
     background-color: rgb(242, 242, 242);
     color: rgb(68, 68, 68);
   }
 }
 
+.programs__button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
