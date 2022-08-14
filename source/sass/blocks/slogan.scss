@@ -12,7 +12,7 @@
         hsl(97 53% 47% / 85%),
         hsl(97 53% 47% / 85%)
       ),
-      url("../../img/background-wrapper.jpg");
+      url("../img/background-wrapper.jpg");
     background-repeat: no-repeat;
     background-size: 320px 302px;
     width: 320px;
@@ -24,10 +24,14 @@
 }
 
 .slogan__heading {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 29px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
   color: rgb(252, 252, 252);
-  margin: 0;
-  margin-bottom: 29px;
   text-align: center;
 }

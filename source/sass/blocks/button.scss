@@ -1,11 +1,13 @@
 .button {
-  padding: 7px 73px;
+  display: block;
+  width: 280px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: rgba(252, 252, 252, 1);
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  text-align: center;
   background-color: rgba(104, 183, 56, 1);
   border: none;
 
@@ -15,7 +17,8 @@
   }
 
   &--show-more {
-    padding: 10px 94px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: rgb(242, 242, 242);
     color: rgb(68, 68, 68);
   }

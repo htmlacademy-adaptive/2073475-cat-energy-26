@@ -1,22 +1,28 @@
 .form-program__heading {
   margin: 0;
   margin-bottom: 39px;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
+.form-program__item {
+  margin-bottom: 10px;
+}
+
 .form-program__label {
-  margin-right: 13px;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
 .form-program__text-input {
-  margin: 0;
-  padding: 13px 50px 14px 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 14px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -24,6 +30,17 @@
 
   &::placeholder {
     color: rgb(68, 68, 68);
+  }
+}
+
+.form-program__fieldset {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  border: none;
+
+  &:not(:last-child) {
+    margin-bottom: 45px;
   }
 }
 
@@ -47,9 +64,10 @@
 
 .form-program__fieldset-heading {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 26px;
+  margin-right: 8px;
 }
 
 .form-program__textarea {
