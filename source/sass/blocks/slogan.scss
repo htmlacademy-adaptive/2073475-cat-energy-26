@@ -2,19 +2,24 @@
   width: 280px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 25px;
 
   &::before {
     position: absolute;
     content: "";
-    background-image:
+    background:
       linear-gradient(
         hsl(97 53% 47% / 85%),
         hsl(97 53% 47% / 85%)
       ),
-      url("../img/background-wrapper.jpg");
+      url("../../img/background-wrapper.jpg");
     background-repeat: no-repeat;
     background-size: 320px 302px;
+    width: 320px;
+    height: 302px;
     z-index: -1;
+    bottom: 155px;
+    left: -20px;
   }
 }
 
@@ -24,4 +29,5 @@
   color: rgb(252, 252, 252);
   margin: 0;
   margin-bottom: 29px;
+  text-align: center;
 }
