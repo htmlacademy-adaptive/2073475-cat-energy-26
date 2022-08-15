@@ -12,7 +12,7 @@
 .stats__heading {
   margin: 0;
   margin-bottom: 40px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -28,7 +28,7 @@
 .stats__text-big {
   margin: 0;
   margin-bottom: 8px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -43,10 +43,8 @@
 }
 
 .stats__sum {
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-family: "Oswald", sans-serif;
+  margin: 20px 0 40px 0;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
