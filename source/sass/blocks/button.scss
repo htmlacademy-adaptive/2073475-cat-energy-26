@@ -1,0 +1,33 @@
+.button {
+  display: block;
+  width: 280px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(252, 252, 252, 1);
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(104, 183, 56, 1);
+  border: none;
+
+  &--primary {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &--show-more {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(242, 242, 242);
+    color: rgb(68, 68, 68);
+  }
+}
+
+.programs__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
