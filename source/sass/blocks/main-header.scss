@@ -1,6 +1,5 @@
 .main-header {
-  width: 280px;
-  margin: 0 auto;
+  margin: 0 20px;
   font-size: 20px;
   line-height: 20px;
   font-style: normal;
@@ -8,15 +7,12 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0 30px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
   }
-}
 
-.main-header__logo {
-  margin: 20px 17px 20px 17px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
   }
 }

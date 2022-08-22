@@ -9,10 +9,13 @@
 }
 
 .form-program__item {
+  display: flex;
   margin-bottom: 10px;
+  align-items: center;
 }
 
 .form-program__label {
+  margin-right: 13px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -20,6 +23,7 @@
 }
 
 .form-program__text-input {
+  width: 100%;
   padding: 13px 0 13px 14px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -41,18 +45,49 @@
   &:not(:last-child) {
     margin-bottom: 45px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .form-program__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 25px 27px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.form-program__list-extra {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form-program__item-radio {
-  &:not(:last-child) {
-    margin-bottom: 13px;
-  }
+  margin-bottom: 13px;
 }
 
 .form-program__radio-text {
@@ -70,6 +105,9 @@
 }
 
 .form-program__textarea {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 19px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -80,6 +118,10 @@
 .form-program__item-checkbox {
   &:not(:last-child) {
     margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
   }
 }
 
@@ -95,4 +137,24 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 80px;
+  }
+}
+
+.form-program__container-form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form-program__button-container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
 }

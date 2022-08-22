@@ -1,8 +1,27 @@
 .main-footer {
-  width: 280px;
-  margin: 0 auto;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
+}
+
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__logo {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 30px;
+  }
 }
