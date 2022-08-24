@@ -15,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -38,6 +39,10 @@
 .stats__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 162px 162px;
+  }
 }
 
 .stats__item {
