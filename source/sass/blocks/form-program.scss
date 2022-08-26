@@ -1,6 +1,26 @@
 .form-program {
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.form-program__heading-main {
+  margin: 0;
+  margin-bottom: 37px;
+  padding-top: 27px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .form-program__heading {
