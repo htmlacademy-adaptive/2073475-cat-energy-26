@@ -1,9 +1,14 @@
 .logo {
-  margin: 0 auto;
+  display: flex;
+  margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+  }
 }
 
 .logo__image {
-  margin-right: 57px;
+  margin-right: 56px;
 
   @media (min-width: $tablet-width) {
     margin-right: 12px;
@@ -11,5 +16,9 @@
 }
 
 .logo__text {
-  margin-right: 65px;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }

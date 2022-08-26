@@ -1,12 +1,23 @@
 .stats {
   background-color: rgba(234, 234, 234, 1);
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .stats__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding-top: 25px;
+  margin: 0 20px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .stats__heading {
@@ -23,6 +34,23 @@
   font-size: 14px;
   line-height: 18px;
   color: rgba(68, 68, 68, 1);
+}
+
+.stats__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 162px 162px;
+  }
+}
+
+.stats__item {
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
 }
 
 .stats__text-big {

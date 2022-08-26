@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энержди</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body>
     <header class="main-header">
       <a class="main-header__logo logo" href="index.html">
         <img class="logo__image" src="img/logo_mobile.svg" width="33" height="38" alt="Логотип Кэт энержди">
@@ -35,9 +35,10 @@
     <!-- Form -->
 
     <main class="form-wrapper">
-        <h1 class="form-wrapper__heading">Подбор программы</h1>
+        <h1 class="visually-hidden">Программы</h1>
         <form class="form-program" action="#" method="get">
-            <h2 class="form-program__heading">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+          <h2 class="form-program__heading-main">Подбор программы</h2>
+            <h3 class="form-program__heading">Заполните анкету, и мы подберем программу питания для вашего кота</h3>
             <fieldset class="form-program__fieldset">
               <legend class="visually-hidden">Личные данные</legend>
                 <div class="form-program__item">
@@ -80,22 +81,26 @@
 
             <fieldset class="form-program__fieldset">
               <legend class="form-program__fieldset-heading">Контактные данные (владельца кота)</legend>
-              <div class="form-program__item">
-                <label class="form-program__label" for="email">E-mail:*</label>
-                <input class="form-program__text-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-              </div>
-              <div class="form-program__item">
-                <label class="form-program__label" for="phone">Телефон:*</label>
-                <input class="form-program__text-input" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+              <div class="form-program__items-wrapper">
+                <div class="form-program__item">
+                  <label class="form-program__label" for="email">E-mail:*</label>
+                  <input class="form-program__text-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+                </div>
+                <div class="form-program__item">
+                  <label class="form-program__label" for="phone">Телефон:*</label>
+                  <input class="form-program__text-input" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+                </div>
               </div>
             </fieldset>
+
             <fieldset class="form-program__fieldset">
               <label class="form-program__fieldset-heading" for="comment">Комментарий</label>
                 <textarea class="form-program__textarea" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
             </fieldset>
+
             <fieldset class="form-program__fieldset">
               <legend class="form-program__fieldset-heading">Дополнительно</legend>
-                <ul class="form-program__list">
+                <ul class="form-program__list form-program__list--extra">
                   <li class="form-program__item-checkbox">
                     <label class="form-program__checkbox-label">
                       <input class="form-program__checkbox-input visually-hidden" type="checkbox" name="sweetener" checked>
@@ -122,9 +127,10 @@
                   </li>
                 </ul>
             </fieldset>
-
-            <button class="button button--primary" type="submit">отправить заявку</button>
-            <p class="form-program__footnote">* — Обязательные поля</p>
+            <div class="form-program__button-container">
+              <button class="button button--primary" type="submit">отправить заявку</button>
+              <p class="form-program__footnote">* — Обязательные поля</p>
+            </div>
         </form>
 
         <!-- Contacts -->
@@ -147,8 +153,7 @@
         <a class="main-footer__logo logo" href="index.html">
           <img class="logo__text" src="img/logo_2.svg" width="100" height="18" alt="Кэт энержди">
         </a>
-      </div>
-      <div class="main-footer__social social">
+        <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
@@ -169,6 +174,7 @@
       </div>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
       </div>
     </footer>
   </body>

@@ -6,4 +6,8 @@
   line-height: 20px;
   font-weight: 400;
   color: rgb(34, 34, 34);
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }

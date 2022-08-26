@@ -1,6 +1,11 @@
 
 .card-desc {
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .card-desc__text {
@@ -10,4 +15,8 @@
   font-size: 12px;
   line-height: 16px;
   color: rgb(68, 68, 68);
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
