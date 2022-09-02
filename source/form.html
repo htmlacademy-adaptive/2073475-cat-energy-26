@@ -12,7 +12,7 @@
         <img class="logo__image" src="img/logo_mobile.svg" width="33" height="38" alt="Логотип Кэт энержди">
         <img class="logo__text" src="img/logo_2.svg" width="100" height="18" alt="Кэт энержди">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -80,7 +80,9 @@
             </fieldset>
 
             <fieldset class="form-program__fieldset">
-              <legend class="form-program__fieldset-heading">Контактные данные (владельца кота)</legend>
+              <div class="form-program__heading-container">
+                <legend class="form-program__fieldset-heading">Контактные данные (владельца кота)</legend>
+              </div>
               <div class="form-program__items-wrapper">
                 <div class="form-program__item">
                   <label class="form-program__label" for="email">E-mail:*</label>
@@ -94,13 +96,17 @@
             </fieldset>
 
             <fieldset class="form-program__fieldset">
-              <label class="form-program__fieldset-heading" for="comment">Комментарий</label>
-                <textarea class="form-program__textarea" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
+              <div class="form-program__heading-container form-program__heading-container--comment">
+                <label class="form-program__fieldset-heading" for="comment">Комментарий</label>
+              </div>
+              <textarea class="form-program__textarea" name="comment" id="comment" rows="8">Расскажите обо всех повадках кота</textarea>
             </fieldset>
 
             <fieldset class="form-program__fieldset">
-              <legend class="form-program__fieldset-heading">Дополнительно</legend>
-                <ul class="form-program__list form-program__list--extra">
+              <div class="form-program__heading-container">
+                <legend class="form-program__fieldset-heading form-program__heading-container--extra">Дополнительно</legend>
+              </div>
+              <ul class="form-program__list form-program__list--extra">
                   <li class="form-program__item-checkbox">
                     <label class="form-program__checkbox-label">
                       <input class="form-program__checkbox-input visually-hidden" type="checkbox" name="sweetener" checked>
@@ -135,20 +141,22 @@
 
         <!-- Contacts -->
 
-      <section class="contacts">
+      <section class="contacts contacts--grey">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__saint-peterburg">Санкт-Петербург</span></p>
         </div>
-        <div class="contacts__map">
+        <div class="contacts__map-wrapper">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461629038!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1661802054583!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--grey">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo logo" href="index.html">
           <img class="logo__text" src="img/logo_2.svg" width="100" height="18" alt="Кэт энержди">
@@ -177,5 +185,6 @@
       </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

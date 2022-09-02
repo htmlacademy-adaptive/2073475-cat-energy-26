@@ -1,24 +1,32 @@
 .contacts {
-  margin: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 30px;
+  &--grey {
+    background-color: rgb(242, 242, 242);
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1440px;
     margin: 0 auto;
+    padding: 95px 0 107px;
+    background-image: url("../img/location-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 1440px 400px;
   }
 }
 
 .contacts__wrapper {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 26px 20px 26px 20px;
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
   @media (min-width: $desktop-width) {
-    justify-content: start;
+    width: 530px;
+    margin-left: 110px;
+    justify-content: space-between;
+    background-color: #ffffff;
   }
 }
 
@@ -30,11 +38,13 @@
 
   @media (min-width: $tablet-width) {
     width: 170px;
+    margin-left: 40px;
   }
 }
 
 .contacts__text {
   margin: 0;
+  margin-right: 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -42,4 +52,23 @@
   @media (min-width: $tablet-width) {
     width: 160px;
   }
+}
+
+.contacts__saint-peterburg {
+  margin-top: 10px;
+}
+
+.contacts__map-wrapper {
+  min-width: 320px;
+  background-image: url("../img/location-mobile.jpg");
+  background-size: 320px 362px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.contacts__map {
+  width: 100%;
 }

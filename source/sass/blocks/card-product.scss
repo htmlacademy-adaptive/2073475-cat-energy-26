@@ -1,3 +1,9 @@
+.card-product {
+  @media (min-width: $tablet-width) {
+    margin: 0 36px;
+  }
+}
+
 .card-product__heading {
   margin: 0;
   margin-bottom: 18px;

@@ -20,12 +20,26 @@
 
     @media (min-width: $tablet-width) {
       width: 708px;
-      background-size: 708px;
+      background:
+        linear-gradient(
+        hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)
+      ),
+        url("../../img/gift-cat-tablet.png");
+      background-repeat: no-repeat;
+      background-size: 708px 200px;
     }
 
     @media (min-width: $desktop-width) {
       width: 250px;
-      background-size: 250px 250px;
+      background:
+        linear-gradient(
+      hsl(97 53% 47% / 85%),
+      hsl(97 53% 47% / 85%)
+    ),
+        url("../../img/gift-cat-desktop.png");
+      background-repeat: no-repeat;
+      background-size: 245px 282px;
     }
   }
 
@@ -45,9 +59,15 @@
   text-align: center;
   padding: 187px 61px 0 58px;
 
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    padding: 71px 124px 69px 420px;
+    text-align: start;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding-top: 162px;
-    padding-right: 40px;
+    padding: 188px 43px 42px 41px;
+    text-align: center;
   }
 }

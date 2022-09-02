@@ -1,5 +1,7 @@
 
 .card-desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {

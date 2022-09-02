@@ -1,6 +1,14 @@
 .extra-product-item-desc {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .extra-product-item-desc__text {
@@ -10,4 +18,9 @@
   font-size: 14px;
   line-height: 14px;
   color: rgb(68, 68, 68);
+  text-align: end;
+
+  @media (min-width: $desktop-width) {
+    text-align: end;
+  }
 }

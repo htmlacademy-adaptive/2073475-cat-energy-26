@@ -3,6 +3,7 @@
   margin: 0 auto;
   position: relative;
   margin-bottom: 25px;
+  padding-top: 27px;
 
   &::before {
     position: absolute;
@@ -18,14 +19,17 @@
     width: 320px;
     height: 302px;
     z-index: -1;
-    bottom: 155px;
+    bottom: 180px;
     left: -20px;
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
   }
 }
 
 .slogan__heading-main {
   margin: 0;
-  margin-top: 27px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: rgba(255, 255, 255);
