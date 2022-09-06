@@ -59,10 +59,19 @@
 }
 
 .contacts__map-wrapper {
-  min-width: 320px;
+  margin: 0 auto;
+  width: 320px;
+  min-height: 362px;
   background-image: url("../img/location-mobile.jpg");
   background-size: 320px 362px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/location-tablet.jpg");
+    background-size: 768px 400px;
+    width: 768px;
+    min-height: 400px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;

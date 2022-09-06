@@ -7,20 +7,27 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     margin: 0;
   }
 }
 
 .extra-product-item-desc__text {
+  width: 132px;
   margin: 0;
   margin-bottom: 15px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: rgb(68, 68, 68);
-  text-align: end;
 
   @media (min-width: $desktop-width) {
-    text-align: end;
+    width: 132px;
+    margin-right: 112px;
+
+    &:last-child {
+      width: 44px;
+      margin-right: 38px;
+    }
   }
 }
