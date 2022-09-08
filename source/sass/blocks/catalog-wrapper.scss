@@ -1,15 +1,15 @@
-.catalog-wrapper {
-  &--extra {
-    margin: 0 20px;
+.catalog-wrapper__extra {
+  margin: 0 20px;
 
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
-    @media (min-width: $desktop-width) {
-      position: relative;
-      margin-bottom: 60px;
-      display: flex;
-    }
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
   }
 }

@@ -45,4 +45,8 @@
 .catalog__item {
   text-align: center;
   margin-bottom: 33px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }

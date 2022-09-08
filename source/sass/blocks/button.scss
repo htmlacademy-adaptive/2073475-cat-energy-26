@@ -24,10 +24,17 @@
     padding-bottom: 10px;
 
     @media (min-width: $tablet-width) {
-      width: 260px;
       font-size: 20px;
-      line-height: 0px;
-      margin-right: 62px;
+    }
+  }
+
+  &--order {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 2 span;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
     }
   }
 
@@ -53,14 +60,4 @@
   line-height: 16px;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
-}
-
-.button-order {
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 2 span;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 244px;
-  }
 }

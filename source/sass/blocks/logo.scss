@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  padding-top: 40px;
+  padding-top: 17px;
   margin-bottom: 17px;
 
   &:hover {
@@ -28,6 +28,7 @@
 
 .logo__text {
   margin-top: 10px;
+  margin-left: 25px;
 
   @media (min-width: $tablet-width) {
     margin-right: 0;

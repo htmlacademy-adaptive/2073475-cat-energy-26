@@ -19,13 +19,13 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      width: 708px;
+      width: 100%;
       background:
         linear-gradient(
         hsl(97 53% 47% / 85%),
         hsl(97 53% 47% / 85%)
       ),
-        url("../../img/gift-cat-tablet.png");
+        url("../img/gift-cat-tablet.png");
       background-repeat: no-repeat;
       background-size: 708px 200px;
     }
@@ -37,11 +37,15 @@
       hsl(97 53% 47% / 85%),
       hsl(97 53% 47% / 85%)
     ),
-        url("../../img/gift-cat-desktop.png");
+        url("../img/gift-cat-desktop.png");
       background-repeat: no-repeat;
       background-size: 245px 289px;
       top: 8px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
