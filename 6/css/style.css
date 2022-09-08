@@ -396,7 +396,7 @@ a {
 
 .logo {
   display: flex;
-  padding-top: 40px;
+  padding-top: 17px;
   margin-bottom: 17px;
 }
 .logo:hover {
@@ -423,6 +423,7 @@ a {
 
 .logo__text {
   margin-top: 10px;
+  margin-left: 25px;
 }
 @media (min-width: 768px) {
   .logo__text {
@@ -439,7 +440,7 @@ a {
   width: 24px;
   height: 38px;
   top: -67px;
-  right: 20px;
+  right: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -453,12 +454,12 @@ a {
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 25px;
+  top: 22px;
   left: 0;
   width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+  height: 18px;
+  background-image: url("../img/icon_gamburger.svg");
+  background-repeat: no-repeat;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -469,21 +470,12 @@ a {
 .main-nav--opened .main-nav__toggle::before, .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  top: -45px;
-  left: 18px;
-  width: 28px;
-  height: 2px;
-  background-color: #000000;
-}
-.main-nav--opened .main-nav__toggle::before {
-  transform: rotate(45deg);
-  box-shadow: none;
-}
-.main-nav--opened .main-nav__toggle::after {
-  transform: rotate(-45deg);
-}
-.main-nav--opened .main-nav__toggle:active::before, .main-nav--opened .main-nav__toggle:active::after {
-  background-color: fade(#000000, 30%);
+  top: -55px;
+  left: 40px;
+  width: 19px;
+  height: 22px;
+  background-image: url("../../img/icon__close.svg");
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 767px) {
@@ -595,6 +587,7 @@ a {
   background: #68b738;
   border-radius: 50px;
   top: 21px;
+  left: 20px;
 }
 @media (min-width: 768px) {
   .programs__item::before {
@@ -733,7 +726,7 @@ a {
   height: 60px;
   background: #68b738;
   left: -80px;
-  margin-bottom: 20px;
+  bottom: -3px;
 }
 @media (min-width: 768px) {
   .info__text::before {
@@ -1023,14 +1016,14 @@ a {
   }
 }
 
-.contacts__saint-peterburg {
+.contacts__city {
   margin-top: 10px;
 }
 
 .contacts__map-wrapper {
   margin: 0 auto;
   width: 320px;
-  min-height: 362px;
+  height: 362px;
   background-image: url("../img/location-mobile.jpg");
   background-size: 320px 362px;
   background-repeat: no-repeat;
@@ -1087,7 +1080,6 @@ a {
 @media (min-width: 768px) {
   .main-footer__logo {
     margin: 0;
-    margin-top: 30px;
   }
 }
 
@@ -1133,10 +1125,17 @@ a {
 }
 @media (min-width: 768px) {
   .button--primary {
-    width: 260px;
     font-size: 20px;
-    line-height: 0px;
-    margin-right: 62px;
+  }
+}
+@media (min-width: 768px) {
+  .button--order {
+    grid-column: 1/2 span;
+  }
+}
+@media (min-width: 1440px) {
+  .button--order {
+    width: 244px;
   }
 }
 .button--show-more {
@@ -1160,27 +1159,18 @@ a {
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
-  .button-order {
-    grid-column: 1/2 span;
-  }
-}
-@media (min-width: 1440px) {
-  .button-order {
-    width: 244px;
-  }
-}
-
-.catalog-wrapper--extra {
+.catalog-wrapper__extra {
   margin: 0 20px;
 }
 @media (min-width: 768px) {
-  .catalog-wrapper--extra {
+  .catalog-wrapper__extra {
     margin: 0;
   }
 }
 @media (min-width: 1440px) {
-  .catalog-wrapper--extra {
+  .catalog-wrapper__extra {
+    width: 1220px;
+    margin: 0 auto;
     position: relative;
     margin-bottom: 60px;
     display: flex;
@@ -1237,6 +1227,11 @@ a {
   text-align: center;
   margin-bottom: 33px;
 }
+@media (min-width: 1440px) {
+  .catalog__item {
+    margin: 0;
+  }
+}
 
 .form-program {
   display: flex;
@@ -1280,11 +1275,6 @@ a {
   width: 100%;
   border-top: 2px solid #68b738;
   top: 15px;
-}
-@media (min-width: 1440px) {
-  .form-program__heading-container::before {
-    width: 1440px;
-  }
 }
 
 .form-program__heading {
@@ -1463,7 +1453,7 @@ a {
 }
 @media (min-width: 1440px) {
   .form-program__fieldset-heading {
-    margin-left: 90px;
+    margin-left: 110px;
   }
 }
 
@@ -1596,6 +1586,9 @@ a {
   }
 }
 
+.extra-product__heading-container {
+  padding-bottom: 40px;
+}
 .extra-product__heading-container::before {
   position: absolute;
   content: "";
@@ -1603,8 +1596,8 @@ a {
   border-top: 2px solid #68b738;
 }
 @media (min-width: 1440px) {
-  .extra-product__heading-container::before {
-    width: 1440px;
+  .extra-product__heading-container {
+    padding-bottom: 80px;
   }
 }
 
@@ -1612,21 +1605,17 @@ a {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-top: 36px;
+  border: 1px solid #cdcdcd;
 }
 @media (min-width: 768px) {
   .extra-product__list {
-    margin: 0 30px;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
   }
 }
 @media (min-width: 1440px) {
   .extra-product__list {
     width: 896px;
-    margin-left: 110px;
-    margin-right: 80px;
   }
 }
 
@@ -1647,8 +1636,8 @@ a {
 }
 @media (min-width: 768px) {
   .gift::before {
-    width: 708px;
-    background: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../../img/gift-cat-tablet.png");
+    width: 100%;
+    background: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/gift-cat-tablet.png");
     background-repeat: no-repeat;
     background-size: 708px 200px;
   }
@@ -1656,10 +1645,15 @@ a {
 @media (min-width: 1440px) {
   .gift::before {
     width: 250px;
-    background: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../../img/gift-cat-desktop.png");
+    background: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/gift-cat-desktop.png");
     background-repeat: no-repeat;
     background-size: 245px 289px;
     top: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .gift {
+    margin: 0 30px;
   }
 }
 @media (min-width: 1440px) {
@@ -1818,11 +1812,8 @@ a {
 
 .extra-product-item {
   padding: 13px 0 19px;
-  border-top: 1px solid #cdcdcd;
-  border-left: 1px solid #cdcdcd;
-  border-right: 1px solid #cdcdcd;
 }
-.extra-product-item:last-child {
+.extra-product-item:not(:last-child) {
   border-bottom: 1px solid #cdcdcd;
 }
 @media (min-width: 768px) {
@@ -1830,13 +1821,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 26px 38px 28px 38px;
-    padding-bottom: 28px;
-    border-top: 1px solid #cdcdcd;
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
-  }
-  .extra-product-item:last-child {
-    border-bottom: 1px solid #cdcdcd;
   }
 }
 @media (min-width: 1440px) {
@@ -1847,11 +1831,6 @@ a {
     padding-bottom: 15px;
     margin: 0;
     align-items: baseline;
-    border: none;
-    border-top: 1px solid #cdcdcd;
-  }
-  .extra-product-item:last-child {
-    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -1867,7 +1846,7 @@ a {
 }
 @media (min-width: 1440px) {
   .extra-product-item__heading {
-    width: 160px;
+    width: 50px;
     margin-right: 163px;
   }
 }
