@@ -1,16 +1,12 @@
-.extra-product__heading {
-  margin: 0;
-  margin-bottom: 50px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+.extra-product {
+  position: relative;
 }
 
 .extra-product__list {
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
   list-style-type: none;
+  border: 1px solid rgba(205, 205, 205, 1);
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -20,8 +16,4 @@
   @media (min-width: $desktop-width) {
     width: 896px;
   }
-}
-
-.extra-product__item {
-  margin-bottom: 30px;
 }

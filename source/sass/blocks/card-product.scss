@@ -1,3 +1,10 @@
+.card-product {
+  @media (min-width: $tablet-width) {
+    padding: 161px 35px 39px 35px;
+    background-color: rgb(242, 242, 242);
+  }
+}
+
 .card-product__heading {
   margin: 0;
   margin-bottom: 18px;

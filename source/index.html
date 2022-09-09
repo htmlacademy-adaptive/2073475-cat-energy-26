@@ -12,7 +12,7 @@
         <img class="logo__image" src="img/logo_mobile.svg" width="33" height="38" alt="Логотип Кэт энержди.">
         <img class="logo__text" src="img/logo_2.svg" width="100" height="18" alt="Кэт энержди.">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -59,14 +59,26 @@
       <section class="info">
         <h2 class="info__heading">Как это работает</h2>
         <div class="info__container">
-          <p class="info__text">Функциональное питание содержит только полезные питательные вещества.
-          </p>
-          <p class="info__text">Выпускается в виде порошка,который нужно лишь залить кипятком и готово.
-          </p>
-          <p class="info__text">Замените один-два приема обычной еды на наше функциональное питание.
-          </p>
-          <p class="info__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-          </p>
+          <div class="info__item">
+            <p class="info__text">Функциональное питание содержит только полезные питательные вещества.
+            </p>
+            <span class="info__number">1</span>
+          </div>
+          <div class="info__item">
+            <p class="info__text">Выпускается в виде порошка,который нужно лишь залить кипятком и готово.
+            </p>
+            <span class="info__number">2</span>
+          </div>
+          <div class="info__item">
+            <p class="info__text">Замените один-два приема обычной еды на наше функциональное питание.
+            </p>
+            <span class="info__number">3</span>
+          </div>
+          <div class="info__item">
+            <p class="info__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            </p>
+            <span class="info__number">4</span>
+          </div>
         </div>
       </section>
 
@@ -76,6 +88,7 @@
         <div class="stats__wrapper">
           <h2 class="stats__heading">Живой пример</h2>
           <p class="stats__text">Борис сбросил 5 кг за 2 месяца,просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="stats__container-items">
           <div class="stats__items">
             <div class="stats__item">
               <p class="stats__text-big">5 кг</p>
@@ -85,9 +98,8 @@
               <p class="stats__text-big">60 дней</p>
               <p class="stats__text-small">затрачено времени</p>
             </div>
-            <div class="stats__item">
-            <p class="stats__sum">Затраты на питание: 15 000 РУБ.</p>
-            </div>
+          </div>
+          <p class="stats__sum">Затраты на питание: <span class="stats__price">15 000 РУБ.</span></p>
           </div>
         </div>
       </section>
@@ -98,9 +110,11 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
-        <div class="contacts__map">
+        <div class="contacts__map-wrapper">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461629038!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1661802054583!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </section>
     </main>
@@ -110,7 +124,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo logo">
-          <img class="logo__text" src="img/logo_2.svg" width="100" height="18" alt="Кэт энержди">
+          <img class="logo__text" src="img/footer-logo.svg" width="128" height="24" alt="Кэт энержди">
         </a>
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -136,5 +150,6 @@
       </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
