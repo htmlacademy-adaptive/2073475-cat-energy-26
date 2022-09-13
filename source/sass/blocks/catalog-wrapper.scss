@@ -7,11 +7,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1440px;
     margin: 0 auto;
     position: relative;
     margin-bottom: 60px;
     display: flex;
+    justify-content: space-evenly;
   }
 }
 
@@ -51,6 +52,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin-left: 70px;
   }
 }

@@ -30,9 +30,11 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 63px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

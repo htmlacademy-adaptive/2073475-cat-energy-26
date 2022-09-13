@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-  padding-top: 26px;
 }
 
 .main-nav__toggle {
@@ -25,7 +24,7 @@
   left: 0;
   width: 24px;
   height: 18px;
-  background-image: url("../img/icon-gamburger.svg");
+  background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
 }
 
@@ -47,7 +46,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .site-list__item {
+  .main-nav--closed .site-list {
     display: none;
   }
 
