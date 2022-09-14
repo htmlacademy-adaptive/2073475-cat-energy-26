@@ -40,6 +40,9 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    border: none;
+    padding: 0;
+    margin-bottom: 69px;
   }
 }
 

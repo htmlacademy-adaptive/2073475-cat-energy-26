@@ -50,7 +50,7 @@
     width: 1220px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(245px);
+    grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
     margin-bottom: 76px;
   }
