@@ -777,6 +777,9 @@ a {
   .info__container {
     display: flex;
     flex-direction: row;
+    border: none;
+    padding: 0;
+    margin-bottom: 69px;
   }
 }
 
@@ -905,6 +908,7 @@ a {
   .stats__text {
     width: 436px;
     margin-left: 110px;
+    margin-top: 70px;
   }
 }
 
@@ -934,6 +938,7 @@ a {
   .stats__container-items {
     margin-left: 110px;
     flex-direction: column;
+    padding-bottom: 70px;
   }
 }
 
@@ -1028,6 +1033,8 @@ a {
   .stats__sum {
     width: 100%;
     text-align: start;
+    padding: 0;
+    margin-top: 55px;
   }
 }
 
@@ -1052,18 +1059,19 @@ a {
 }
 
 .contacts__wrapper {
-  margin: 26px 20px 26px 20px;
+  padding: 26px 20px 26px 20px;
   display: flex;
   justify-content: space-between;
 }
 @media (min-width: 768px) {
   .contacts__wrapper {
-    margin-bottom: 54px;
+    padding: 56px 40px 55px;
   }
 }
 @media (min-width: 1440px) {
   .contacts__wrapper {
     width: 530px;
+    padding: 56px 80px;
     margin: 0;
     margin-left: 110px;
     justify-content: space-between;
@@ -1079,13 +1087,15 @@ a {
 }
 @media (min-width: 768px) {
   .contacts__title {
+    font-size: 20px;
+    line-height: 26px;
     width: 170px;
     margin-left: 40px;
   }
 }
 @media (min-width: 1440px) {
   .contacts__title {
-    padding: 60px 0 56px 80px;
+    padding: 0;
     margin: 0;
   }
 }
@@ -1098,18 +1108,22 @@ a {
 }
 @media (min-width: 768px) {
   .contacts__text {
+    font-size: 16px;
+    line-height: 20px;
     width: 160px;
   }
 }
 @media (min-width: 1440px) {
   .contacts__text {
-    padding: 56px 60px 63px 0;
+    padding: 0;
     margin: 0;
   }
 }
 
-.contacts__city {
-  margin-top: 10px;
+@media (min-width: 768px) {
+  .contacts__city {
+    padding-top: 10px;
+  }
 }
 
 .contacts__map-wrapper {
@@ -1233,8 +1247,9 @@ a {
 }
 @media (min-width: 768px) {
   .button--primary {
-    width: 240px;
+    width: 250px;
     font-size: 20px;
+    margin: 0 auto;
     padding-top: 14px;
     padding-bottom: 14px;
   }
@@ -1263,6 +1278,7 @@ a {
 @media (min-width: 768px) {
   .button--order {
     grid-column: 1/2 span;
+    width: 100%;
   }
 }
 @media (min-width: 1440px) {
@@ -1379,14 +1395,14 @@ a {
     border: none;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 82px;
+    margin-bottom: 163px;
   }
 }
 @media (min-width: 1440px) {
   .catalog__heading {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 82px;
+    margin-bottom: 165px;
   }
 }
 
@@ -1399,7 +1415,7 @@ a {
   .catalog__list {
     display: grid;
     grid-template-columns: 324px 324px;
-    row-gap: 60px;
+    row-gap: 141px;
     column-gap: 60px;
     margin-bottom: 68px;
   }
@@ -1409,7 +1425,7 @@ a {
     width: 1220px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
     margin-bottom: 76px;
   }
@@ -1419,7 +1435,7 @@ a {
   text-align: center;
   margin-bottom: 33px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .catalog__item {
     margin: 0;
   }
@@ -1885,7 +1901,7 @@ a {
 @media (min-width: 768px) {
   .card-product {
     position: relative;
-    padding: 161px 35px 39px 35px;
+    padding: 140px 30px 39px 30px;
     background-color: #f2f2f2;
   }
 }
@@ -1903,6 +1919,7 @@ a {
 }
 @media (min-width: 768px) {
   .card-product__heading {
+    margin: 0 auto;
     font-size: 20px;
     line-height: 24px;
     width: 127px;
@@ -1921,14 +1938,19 @@ a {
   }
 }
 
-.card-product__image {
-  margin: 33px 36px 0 36px;
-}
 @media (min-width: 768px) {
   .card-product__image {
     position: absolute;
-    top: 0;
-    left: 50px;
+    top: -85px;
+    left: 85px;
+  }
+  .card-product__image--big {
+    top: -110px;
+  }
+}
+@media (min-width: 1440px) {
+  .card-product__image {
+    left: 40px;
   }
 }
 
@@ -2025,8 +2047,14 @@ a {
 }
 @media (min-width: 768px) {
   .card-desc {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 125px 125px;
+    margin-bottom: 33px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .card-desc {
+    grid-template-columns: 85px 85px;
   }
 }
 
@@ -2040,7 +2068,19 @@ a {
 }
 @media (min-width: 768px) {
   .card-desc__text {
+    margin: 0;
+    margin-top: 6px;
+    padding-bottom: 9px;
+    font-size: 16px;
+    line-height: 16px;
     text-align: center;
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .card-desc__text--first {
+    text-align: start;
+  }
+  .card-desc__text--second {
+    text-align: end;
   }
 }
 
