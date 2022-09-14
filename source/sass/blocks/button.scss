@@ -24,8 +24,9 @@
     padding-bottom: 10px;
 
     @media (min-width: $tablet-width) {
-      width: 240px;
+      width: 250px;
       font-size: 20px;
+      margin: 0 auto;
       padding-top: 14px;
       padding-bottom: 14px;
     }
@@ -54,6 +55,7 @@
   &--order {
     @media (min-width: $tablet-width) {
       grid-column: 1 / 2 span;
+      width: 100%;
     }
 
     @media (min-width: $desktop-width) {
