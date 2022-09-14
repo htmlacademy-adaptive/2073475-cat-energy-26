@@ -10,7 +10,7 @@
 
 .card-product__heading {
   width: 76px;
-  margin: 8px 0 18px;
+  margin: 19px 0 18px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -38,8 +38,15 @@
 }
 
 .card-product__image {
+  margin: 33px 36px 25px 56px;
+
+  &--big {
+    margin-left: 48px;
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
+    margin: 0;
     top: -85px;
     left: 85px;
 
