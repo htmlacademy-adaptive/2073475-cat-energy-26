@@ -36,19 +36,17 @@
     }
   }
 
-  &--desktop {
+  &--main-page {
     @media (min-width: $tablet-width) {
       position: absolute;
       top: 250px;
-      padding-top: 14px;
-      padding-bottom: 14px;
-      margin-left: 87px;
+      left: 87px;
     }
 
     @media (min-width: $desktop-width) {
       width: 224px;
       top: 330px;
-      margin-left: 137px;
+      left: 137px;
     }
   }
 

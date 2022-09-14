@@ -45,11 +45,10 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: rgb(0, 0, 0);
 
-  &--desktop {
+  &--main-page {
     @media (min-width: $desktop-width) {
       color: rgb(255, 255, 255);
       font-size: 20px;
-      line-height: 30px;
       font-weight: 400;
     }
   }

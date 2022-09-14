@@ -98,10 +98,10 @@
       background-image: url("../img/location-desktop@2x.jpg");
       background-size: 768px auto;
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
