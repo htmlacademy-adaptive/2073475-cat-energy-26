@@ -30,9 +30,11 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 63px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,6 +59,7 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     margin-left: 110px;
+    margin-top: 70px;
   }
 }
 
@@ -83,6 +86,7 @@
   @media (min-width: $desktop-width) {
     margin-left: 110px;
     flex-direction: column;
+    padding-bottom: 70px;
   }
 }
 
@@ -171,6 +175,8 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     text-align: start;
+    padding: 0;
+    margin-top: 55px;
   }
 }
 

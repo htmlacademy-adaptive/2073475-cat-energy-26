@@ -19,18 +19,42 @@
   }
 
   &--primary {
-    width: 100%;
+    width: 280px;
+    margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
 
     @media (min-width: $tablet-width) {
+      width: 250px;
       font-size: 20px;
+      margin: 0 auto;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 168px;
+    }
+  }
+
+  &--main-page {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 250px;
+      left: 87px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 224px;
+      top: 330px;
+      left: 137px;
     }
   }
 
   &--order {
     @media (min-width: $tablet-width) {
       grid-column: 1 / 2 span;
+      width: 100%;
     }
 
     @media (min-width: $desktop-width) {

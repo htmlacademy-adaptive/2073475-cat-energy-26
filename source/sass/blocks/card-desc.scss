@@ -1,12 +1,17 @@
 
 .card-desc {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 13px;
+  grid-template-columns: 70px 70px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 125px 125px;
+    margin-bottom: 33px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 85px 85px;
   }
 }
 
@@ -18,7 +23,20 @@
   line-height: 16px;
   color: rgb(68, 68, 68);
 
+  &--option {
+    text-align: start;
+  }
+
+  &--value {
+    text-align: end;
+  }
+
   @media (min-width: $tablet-width) {
-    text-align: center;
+    margin: 0;
+    margin-top: 6px;
+    padding-bottom: 9px;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid rgba(205, 205, 205, 1);
   }
 }

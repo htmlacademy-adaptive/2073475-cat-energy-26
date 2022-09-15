@@ -4,13 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энержди</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon16.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
+    <link rel="manifest" href="/source/manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo_mobile.svg" width="33" height="38" alt="Логотип Кэт энержди">
-        <img class="logo__text" src="img/logo_2.svg" width="100" height="18" alt="Кэт энержди">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.png" width="174" height="52">
+          <img class="logo__image" src="img/logo_mobile.svg" width="33" height="38" alt="Логотип Кэт энержди">
+        </picture>
+          <img class="logo__text" src="img/logo_2.svg" width="100" height="18" alt="Кэт энержди">
       </a>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
@@ -163,7 +170,7 @@
     <footer class="main-footer main-footer--grey">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo logo" href="index.html">
-          <img class="logo__text" src="img/footer-logo.svg" width="128" height="18" alt="Кэт энержди">
+          <img class="logo__text logo__text--footer" src="img/footer-logo.svg" width="128" height="18" alt="Кэт энержди">
         </a>
         <div class="main-footer__social social">
         <ul class="social__list">
