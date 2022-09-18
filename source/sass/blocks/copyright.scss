@@ -1,15 +1,31 @@
 .copyright {
-  margin-top: 50px;
-  padding-bottom: 32px;
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-between;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 38px;
+    margin: 0;
+    margin-top: 65px;
   }
 }
 
 .copyright__link {
+  padding-top: 6px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: rgba(68, 68, 68, 1);
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.copyright__icon {
+  fill: rgb(102, 102, 102);
+
+  &:hover {
+    fill: rgb(104, 183, 56);
+  }
 }

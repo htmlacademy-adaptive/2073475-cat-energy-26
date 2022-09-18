@@ -1,3 +1,15 @@
+.show-more {
+  position: relative;
+  margin-top: 78px;
+}
+
+.show-more__icon {
+  position: absolute;
+  content: "";
+  top: -50px;
+  left: 145px;
+}
+
 .show-more__heading {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
