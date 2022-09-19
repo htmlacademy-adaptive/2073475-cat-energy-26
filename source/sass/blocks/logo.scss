@@ -35,8 +35,12 @@
   }
 
   &--footer {
+    margin: 40px auto 32px;
+
     @media (min-width: $tablet-width) {
       display: block;
+      margin-top: 63px;
+      margin-bottom: 63px;
     }
   }
 }

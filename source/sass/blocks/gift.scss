@@ -107,3 +107,14 @@
     text-align: center;
   }
 }
+
+.gift__icon {
+  position: absolute;
+  content: "";
+  top: 59px;
+  left: 101px;
+
+  @media (min-width: $desktop-width) {
+    left: 84px;
+  }
+}

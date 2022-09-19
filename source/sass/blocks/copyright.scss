@@ -1,15 +1,44 @@
 .copyright {
-  margin-top: 50px;
-  padding-bottom: 32px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 38px;
+    margin: 0;
+    margin-top: 65px;
   }
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: rgba(68, 68, 68, 1);
+
+  &:hover {
+    svg {
+      fill: rgb(104, 183, 56);
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.copyright__text {
+  margin-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.copyright__icon {
+  fill: rgb(102, 102, 102);
 }

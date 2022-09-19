@@ -52,6 +52,18 @@
   }
 }
 
+.info__icon {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -65px;
+
+  @media (min-width: $tablet-width) {
+    top: -135px;
+    left: 15px;
+  }
+}
+
 .info__text {
   position: relative;
   margin: 0;
