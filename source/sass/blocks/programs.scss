@@ -145,6 +145,24 @@
   }
 }
 
+.programs__button {
+  &:hover svg {
+    transform: scaleX(1.4);
+  }
+
+  &:active svg {
+    transform: scaleX(1.4);
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .programs__button-icon {
   margin-left: 15px;
+  transform: scaleX(1);
+  transform-origin: center left;
+  transition: transform 0.5s;
 }

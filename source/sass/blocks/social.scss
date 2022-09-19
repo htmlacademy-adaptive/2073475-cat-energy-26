@@ -26,3 +26,17 @@
     margin: 0;
   }
 }
+
+.social__link {
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover svg {
+    fill: rgba(104, 183, 56, 1);
+  }
+}
+
+.social__icon {
+  fill: rgb(102, 102, 102);
+}

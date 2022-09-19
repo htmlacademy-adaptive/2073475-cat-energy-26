@@ -13,18 +13,6 @@
   <body>
 
     <svg style="display: none;">
-      <symbol viewBox="0 0 30 30" id="radio-active">
-        <path d="M29.5 15.27c0 8.04-6.5 14.56-14.5 14.56S.5 23.3.5 15.27C.5 7.24 7 .72 15 .72s14.5 6.52 14.5 14.55Z" stroke="#CDCDCD"/><ellipse cx="15" cy="15.27" rx="6.75" ry="6.77" fill="#68B738"/>
-      </symbol>
-      <symbol viewBox="0 0 30 30" id="radio">
-        <path d="M29.5 15.42c0 8.04-6.5 14.55-14.5 14.55S.5 23.47.5 15.42C.5 7.38 7 .87 15 .87s14.5 6.51 14.5 14.55Z" stroke="#CDCDCD"/>
-      </symbol>
-      <symbol viewBox="0 0 30 30" id="checkbox-active">
-        <path stroke="#CDCDCD" d="M.5.5h29v29H.5z"/><path d="m13 19.72-5.7-6.45-1.05 1.19L13 22.09 24.25 9.37 23.2 8.09 13 19.72Z" fill="#68B738"/>
-      </symbol>
-      <symbol viewBox="0 0 30 30" id="checkbox">
-        <path stroke="#CDCDCD" d="M.5.5h29v29H.5z"/>
-      </symbol>
       <symbol viewBox="0 0 20 14" id="email">
         <path stroke="#222" stroke-width="1.3" d="M.65 5.85v8M17.65 5.85v8M0 13.2h18M0 1.2h18M17.35 3.03 9 9.53.65 3.02V1.5h16.7v1.53Z"/>
       </symbol>
@@ -40,7 +28,7 @@
       <symbol viewBox="0 0 28 22" id="social-icon-telegram">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M23.46 3.15c.18.15.27.38.23.61l-2.63 15.76a.66.66 0 0 1-1.01.44l-7.88-5.25a.66.66 0 0 1-.15-.96l2.61-3.26-4.36 2.9a.66.66 0 0 1-.65.05L4.36 10.8a.66.66 0 0 1 .08-1.2l18.38-6.57a.66.66 0 0 1 .64.11ZM6.33 10.32l3.53 1.77 7.56-5.04a.66.66 0 0 1 .88.96l-4.8 6 6.43 4.3 2.28-13.66-15.88 5.67Z" fill="#666"/>
       </symbol>
-      <symbol viewBox="0 0 27 34" id="icon-htlm">
+      <symbol viewBox="0 0 27 34" id="htlm">
         <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"/>
       </symbol>
     </svg>
@@ -103,21 +91,17 @@
                   <li class="form-program__item-radio">
                     <label class="form-program__radio-label">
                       <input class="form-program__radio-input visually-hidden" type="radio" name="program" value="slim" checked>
+                      <span class="form-program__radio-box"></span>
                       <span class="form-program__radio-text">
-                        <svg class="form-program__icon-radio" width="30" height="30">
-                          <use href="#radio-active"></use>
-                        </svg>
-                      Похудение
-                      </span>
+                          Похудение
+                        </span>
                     </label>
                   </li>
                   <li class="form-program__item-radio">
                     <label class="form-program__radio-label">
                       <input class="form-program__radio-input visually-hidden" type="radio" name="program" value="pro">
+                      <span class="form-program__radio-box"></span>
                       <span class="form-program__radio-text">
-                        <svg class="form-program__icon-radio" width="30" height="30">
-                          <use href="#radio"></use>
-                        </svg>
                         Набор массы
                       </span>
                     </label>
@@ -125,10 +109,8 @@
                   <li class="form-program__item-radio">
                     <label class="form-program__radio-label">
                       <input class="form-program__radio-input visually-hidden" type="radio" name="program" value="unknown">
+                      <span class="form-program__radio-box"></span>
                       <span class="form-program__radio-text">
-                        <svg class="form-program__icon-radio" width="30" height="30">
-                          <use href="#radio"></use>
-                        </svg>
                         Не знаю(нужен ваш совет)
                         </span>
                     </label>
@@ -176,43 +158,29 @@
                   <li class="form-program__item-checkbox">
                     <label class="form-program__checkbox-label">
                       <input class="form-program__checkbox-input visually-hidden" type="checkbox" name="sweetener" checked>
-                      <span class="form-program__checkbox-text">
-                        <svg class="form-program__checkbox-icon" width="30" height="30">
-                          <use href="#checkbox-active"></use>
-                        </svg>
-                        сахарозаменитель
-                      </span>
+                      <span class="form-program__checkbox"></span>
+                      <span class="form-program__checkbox-text">сахарозаменитель</span>
                     </label>
                   </li>
                   <li class="form-program__item-checkbox">
                     <label class="form-program__checkbox-label">
                       <input class="form-program__checkbox-input visually-hidden" type="checkbox" name="water">
-                      <span class="form-program__checkbox-text">питьевая вода
-                        <svg class="form-program__checkbox-icon"  width="30" height="30">
-                          <use href="#checkbox"></use>
-                        </svg>
-                      </span>
+                      <span class="form-program__checkbox"></span>
+                      <span class="form-program__checkbox-text">питьевая вода</span>
                     </label>
                   </li>
                   <li class="form-program__item-checkbox">
                     <label class="form-program__checkbox-label">
                       <input class="form-program__checkbox-input visually-hidden" type="checkbox" name="milk">
-                      <span class="form-program__checkbox-text">
-                        <svg class="form-program__checkbox-icon" width="30" height="30">
-                          <use href="#checkbox"></use>
-                        </svg>
-                        молоко
-                      </span>
+                      <span class="form-program__checkbox"></span>
+                      <span class="form-program__checkbox-text">молоко</span>
                     </label>
                   </li>
                   <li class="form-program__item-checkbox">
                     <label class="form-program__checkbox-label">
                       <input class="form-program__checkbox-input visually-hidden" type="checkbox" name="vitamins">
-                      <span class="form-program__checkbox-text">
-                        <svg class="form-program__checkbox-icon" width="30" height="30">
-                          <use href="#checkbox"></use>
-                        </svg>витамины
-                      </span>
+                      <span class="form-program__checkbox"></span>
+                      <span class="form-program__checkbox-text">витамины</span>
                     </label>
                   </li>
                 </ul>
@@ -274,10 +242,12 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <svg class="copyright__icon" width="27" height="34">
-          <use href="#icon-htlm"></use>
-        </svg>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">HTML Academy</span>
+          <svg class="copyright__icon" width="27" height="34">
+            <use href="#htlm"></use>
+          </svg>
+        </a>
       </div>
       </div>
     </footer>

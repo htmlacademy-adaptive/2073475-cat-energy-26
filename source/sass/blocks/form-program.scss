@@ -79,8 +79,13 @@
 
 .form-program__item {
   display: flex;
-  margin-bottom: 10px;
   align-items: center;
+  margin: 0 20px 13px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   @media (min-width: $desktop-width) {
     width: 570px;
@@ -112,6 +117,14 @@
   text-transform: uppercase;
   color: rgb(68, 68, 68);
   border: 1px solid rgba(231, 231, 231, 1);
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:active {
+    border-color: rgba(68, 68, 68, 1);
+  }
 
   &::placeholder {
     color: rgb(68, 68, 68);
@@ -183,21 +196,20 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  &:first-child {
-    margin-top: 25px;
-  }
-
   &:not(:last-child) {
     margin-bottom: 20px;
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
+
+    &:first-child {
+      margin-top: 20px;
+    }
   }
 }
 
 .form-program__radio-text {
-  position: relative;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -209,12 +221,36 @@
   }
 }
 
-.form-program__icon-radio {
+.form-program__radio-label {
+  position: relative;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-program__radio-box {
   position: absolute;
   content: "";
-  top: -2px;
-  left: -46px;
-  fill: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+  top: -5px;
+  left: 0;
+  background-image: url("../img/icons/radio-box.svg");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+
+.form-program__radio-input[type="radio"] {
+  &:checked + .form-program__radio-box {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: 0;
+    background-image: url("../img/icons/radio-checked.svg");
+  }
 }
 
 .form-program__fieldset-heading {
@@ -291,15 +327,37 @@
   }
 }
 
-.form-program__checkbox-icon {
+.form-program__checkbox-label {
+  position: relative;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-program__checkbox {
   position: absolute;
-  fill: rgb(255, 255, 255);
-  left: -46px;
+  width: 30px;
+  height: 30px;
+  left: 0;
   top: -2px;
+  background-image: url("../../img/icons/check-box.svg");
+  background-size: 30px 30px;
+}
+
+.form-program__checkbox-input[type="checkbox"] {
+  &:checked + .form-program__checkbox {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -2px;
+    background-image: url("../../img/icons/checked.svg");
+    background-size: 30px 30px;
+  }
 }
 
 .form-program__checkbox-text {
-  position: relative;
   font-size: 16px;
   line-height: 18px;
   margin-left: 46px;

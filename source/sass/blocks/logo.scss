@@ -35,9 +35,7 @@
   }
 
   &--footer {
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 32px;
+    margin: 40px auto 32px;
 
     @media (min-width: $tablet-width) {
       display: block;
