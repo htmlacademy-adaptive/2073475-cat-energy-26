@@ -47,7 +47,7 @@
       background-size: 720px 694px;
       width: 720px;
       height: 694px;
-      top: -128px;
+      top: -96px;
       left: 50%;
 
       @media (min-resolution: 2dppx) {
@@ -64,7 +64,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    margin: 0 auto;
+    margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
