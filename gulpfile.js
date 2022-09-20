@@ -3,6 +3,8 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
@@ -62,7 +64,7 @@ const createWebp = () => {
 }
 
 // SVG
-const svg = () => 
+const svg = () =>
 gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'))
@@ -124,22 +126,37 @@ const watcher = () => {
   gulp.watch('source/js/scripts.js', gulp.series(scripts));
 }
 
-// Build 
-const build = gulp.series(
+//Build
+
+export const build = gulp.series(
+clean,
+copy,
+optimizeImages,
+gulp.parallel (
+styles,
+html,
+scripts,
+svg,
+sprite,
+createWebp
+),
+)
+
+// Default
+
+export default gulp.series(
   clean,
   copy,
-  optimizeImages,
-  gulp.parallel (
+  copyImages,
+  gulp.parallel(
     styles,
     html,
     scripts,
     svg,
     sprite,
     createWebp
-  ),
-)
-
-
-export default gulp.series(
-  html, styles, server, watcher
-)
+),
+gulp.series(
+  server,
+  watcher
+));
