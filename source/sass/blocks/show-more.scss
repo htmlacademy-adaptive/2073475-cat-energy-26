@@ -1,6 +1,10 @@
 .show-more {
   position: relative;
   margin-top: 78px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 112px;
+  }
 }
 
 .show-more__icon {
@@ -8,6 +12,10 @@
   content: "";
   top: -50px;
   left: 145px;
+
+  @media (min-width: $desktop-width) {
+    left: 109px;
+  }
 }
 
 .show-more__heading {
@@ -18,7 +26,11 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    text-align: center;
+    font-size: 20px;
+    line-height: 22px;
+    width: 134px;
+    margin: 49px auto 23px;
+    padding-top: 49px;
   }
 }
 
@@ -28,6 +40,9 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
-    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    margin: 0 auto 87px;
   }
 }
