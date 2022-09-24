@@ -83,6 +83,7 @@
   @media (min-width: $desktop-width) {
     width: 250px;
     margin: 0;
+    padding-right: 45px;
   }
 }
 
@@ -97,8 +98,8 @@
 
   @media (min-width: $tablet-width) {
     width: 160px;
-    margin-top: 88px;
-    padding: 71px 124px 69px 420px;
+    margin-top: 81px;
+    padding: 71px 124px 69px 424px;
     text-align: start;
   }
 

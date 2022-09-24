@@ -59,3 +59,10 @@
     left: 40px;
   }
 }
+
+.card-product__button {
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    padding: 13px 0;
+  }
+}

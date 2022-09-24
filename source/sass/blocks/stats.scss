@@ -69,8 +69,7 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    margin-left: 110px;
-    margin-top: 71px;
+    margin: 71px 0 65px 110px;
   }
 }
 
@@ -145,6 +144,8 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -208,12 +209,6 @@
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
 .stats__slider {
   display: flex;
   position: relative;
@@ -249,8 +244,8 @@ img {
   content: "";
   left: calc(50% - 22px);
   top: calc(50% - 22px);
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   border: 2px solid rgb(102, 102, 102);

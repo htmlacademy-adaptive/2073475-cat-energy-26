@@ -27,8 +27,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 0 auto;
-    margin-bottom: 56px;
+    margin: 0 0 57px 70px;
+    padding-top: 56px;
   }
 }
 
@@ -61,9 +61,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
-    margin-bottom: 66px;
+    width: 364px;
+    margin: 0 0 64px 109px;
+    padding: 0;
   }
 }
 
@@ -79,6 +79,7 @@
     grid-template-columns: 570px 570px;
     column-gap: 80px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -95,7 +96,7 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     margin-right: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -133,8 +134,12 @@
     border-color: rgba(205, 205, 205, 1);
   }
 
+  &:active {
+    border-color: rgb(205, 205, 205);
+  }
+
   &:focus {
-    border-color: rgba(68, 68, 68, 1);
+    border: 2px solid rgba(68, 68, 68, 1);
   }
 
   &:invalid {
@@ -156,7 +161,7 @@
     margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 60px;
+      margin-bottom: 47px;
     }
   }
 
@@ -182,7 +187,6 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 0;
     margin: 0;
   }
 
@@ -235,6 +239,7 @@
     font-size: 20px;
     line-height: 30px;
     padding: 0;
+    margin-left: 61px;
   }
 }
 
@@ -256,6 +261,10 @@
   background-image: url("../img/icons/radio-box.svg");
   background-size: 30px 30px;
   background-repeat: no-repeat;
+
+  &:focus {
+    border: 2px solid rgba(68, 68, 68, 1);
+  }
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -280,6 +289,10 @@
     left: 0;
     background-image: url("../img/icons/radio-checked.svg");
     background-size: 30px 30px;
+
+    &:focus {
+      border: 2px solid rgba(68, 68, 68, 1);
+    }
 
     @media (min-width: $tablet-width) {
       position: absolute;
@@ -313,6 +326,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-weight: 400;
     font-size: 36px;
     line-height: 36px;
     margin: 0 30px;
@@ -395,6 +409,10 @@
   background-image: url("../img/icons/check-box.svg");
   background-size: 30px 30px;
 
+  &:focus {
+    border: 2px solid rgba(68, 68, 68, 1);
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
@@ -416,6 +434,10 @@
     top: -2px;
     background-image: url("../img/icons/checked.svg");
     background-size: 30px 30px;
+
+    &:focus + label::before {
+      border: 2px solid rgba(68, 68, 68, 1);
+    }
 
     @media (min-width: $tablet-width) {
       position: absolute;
@@ -485,7 +507,7 @@
     margin-top: 6px;
     margin-left: 30px;
     padding-left: 40px;
-    margin-bottom: 72px;
+    margin-bottom: 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -510,7 +532,8 @@
     left: 263px;
 
     @media (min-width: $tablet-width) {
-      left: 650px;
+      left: 634px;
+      top: 20px;
     }
 
     @media (min-width: $desktop-width) {
@@ -524,7 +547,8 @@
     left: 265px;
 
     @media (min-width: $tablet-width) {
-      left: 650px;
+      left: 633px;
+      top: 91px;
     }
 
     @media (min-width: $desktop-width) {
