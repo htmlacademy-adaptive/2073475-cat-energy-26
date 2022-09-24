@@ -57,7 +57,7 @@
         </picture>
           <img class="logo__text" src="img/logo-text-mobile.svg " srcset="img/logo-text-mobile@2x.svg 2x" width="100" height="18" alt="Кэт энерджи">
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -130,10 +130,10 @@
                 <use href="#icon-leaf"></use>
               </svg>
             </p>
-            <span class="info__number">1</span>
+            <span class="info__number info__number--option-one">1</span>
           </div>
           <div class="info__item">
-            <p class="info__text">Выпускается в виде порошка,который нужно лишь залить кипятком и готово.
+            <p class="info__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
               <svg class="info__icon" width="29" height="31">
                 <use href="#icon-product"></use>
               </svg>
@@ -179,6 +179,23 @@
           <p class="stats__sum">Затраты на питание: <span class="stats__price">15 000 РУБ.</span></p>
           </div>
         </div>
+          <div class="stats__slider">
+            <div class="stats__slider-toggle">
+                 <div type="button" class="stats__slider-button"></div>
+             </div>
+             <div class="stats__slider-item">
+                 <picture>
+                    <source media="(min-width: 768px)" srcset="img/left-pic-tablet.png 1x, img/left-pic-tablet@2x.png 2x" width="560" height="512">
+                     <img class="stats__slider-img stats__slider-img--before" src="img/left-pic-mobile.png" srcset="img/left-pic-mobile@2x.png 2x" alt="Полный котик." width="280" height="256">
+                 </picture>
+             </div>
+             <div class="stats__slider-item">
+                 <picture>
+                    <source media="(min-width: 768px)" srcset="img/right-pic-tablet.png 1x, img/right-pic-tablet@2x.png 2x" width="560" height="512">
+                     <img class="stats__slider-img stats__slider-img--after" src="img/right-pic-mobile.png" srcset="img/right-pic-mobile@2x.png 2x" alt="Худой котик." width="280" height="256">
+                 </picture>
+             </div>        
+         </div>        
       </section>
 
       <!-- Contacts -->

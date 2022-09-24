@@ -15,11 +15,12 @@
 
 .contacts__wrapper {
   padding: 26px 20px 26px 20px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 141px 139px;
 
   @media (min-width: $tablet-width) {
     padding: 56px 40px 55px;
+    column-gap: 357px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +35,8 @@
 
 .contacts__title {
   margin: 0;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
@@ -42,7 +45,7 @@
     font-size: 20px;
     line-height: 26px;
     width: 170px;
-    margin-left: 40px;
+    margin-left: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,6 +64,7 @@
     font-size: 16px;
     line-height: 20px;
     width: 160px;
+    text-align: end;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  padding-top: 17px;
+  padding-top: 10px;
   margin-bottom: 17px;
 
   &:hover {
@@ -15,31 +15,32 @@
     padding-top: 24px;
     margin-right: 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+  }
 }
 
 .logo__image {
+  margin-left: 20px;
   margin-right: 56px;
 
-
   @media (min-width: $tablet-width) {
-    margin-right: 12px;
+    margin: 0;
   }
 }
 
 .logo__text {
-  margin-top: 10px;
-  margin-left: 25px;
-
   @media (min-width: $tablet-width) {
     display: none;
   }
 
   &--footer {
-    margin: 40px auto 32px;
+    margin: 40px auto 30px;
 
     @media (min-width: $tablet-width) {
       display: block;
-      margin-top: 63px;
+      margin-top: 69px;
       margin-bottom: 63px;
     }
   }

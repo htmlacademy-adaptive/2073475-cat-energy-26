@@ -2,6 +2,32 @@
   position: relative;
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav .site-list__item {
+  display: block;
+}
+
+.main-nav .site-list__item--main-page-active a {
+  padding-right: 21px;
+  padding-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-nav .user-list__item {
+  display: block;
+}
+
 .main-nav__toggle {
   position: absolute;
   width: 24px;
@@ -21,7 +47,7 @@
   content: "";
   position: absolute;
   top: 22px;
-  left: 0;
+  left: -20px;
   width: 24px;
   height: 18px;
   background-image: url("../img/icon-burger.svg");
@@ -37,7 +63,7 @@
     content: "";
     position: absolute;
     top: -55px;
-    left: 40px;
+    left: 20px;
     width: 19px;
     height: 22px;
     background-image: url("../img/icon-close.svg");

@@ -1,9 +1,8 @@
 .slogan {
   width: 280px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   position: relative;
-  margin-bottom: 25px;
-  padding-top: 27px;
+  padding-top: 26px;
 
   &::before {
     position: absolute;
@@ -47,7 +46,7 @@
       background-size: 720px 694px;
       width: 720px;
       height: 694px;
-      top: -103px;
+      top: -130px;
       left: 50%;
 
       @media (min-resolution: 2dppx) {
@@ -64,14 +63,15 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    margin: 0 30px;
+    margin: 0 auto;
+    padding-top: 44px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     margin: 0 auto;
     position: relative;
-    padding-top: 111px;
+    padding-top: 92px;
   }
 }
 
@@ -90,12 +90,12 @@
     font-size: 60px;
     line-height: 60px;
     text-align: start;
-    margin-left: 87px;
+    margin-left: 116px;
     margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 137px;
+    margin-left: 189px;
   }
 }
 
@@ -114,18 +114,22 @@
     font-size: 20px;
     line-height: 20px;
     text-align: start;
-    margin-left: 87px;
+    margin-left: 119px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 137px;
+    margin-left: 189px;
   }
 }
 
 .slogan__image {
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 20px;
-    left: 39%;
+    top: 9px;
+    left: 37%;
   }
 }
