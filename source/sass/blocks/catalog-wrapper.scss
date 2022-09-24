@@ -24,8 +24,18 @@
   &::before {
     position: absolute;
     content: "";
+    top: 0;
+    left: 0;
     width: 100%;
     border-top: 2px solid rgba(104, 183, 56, 1);
+
+    @media (min-width: $tablet-width) {
+      top: 5px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 95px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +57,9 @@
   top: -16px;
 
   @media (min-width: $tablet-width) {
+    width: 352px;
+    font-size: 36px;
+    line-height: 36px;
     margin-left: 30px;
     padding-left: 37px;
   }

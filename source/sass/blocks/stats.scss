@@ -3,7 +3,7 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 100px;
+    padding-bottom: 105px;
     background: linear-gradient(to top, rgba(234, 234, 234, 1) 44%, rgb(255, 255, 255) 0%);
   }
 
@@ -25,6 +25,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-right: 115px;
   }
 }
 
@@ -61,7 +62,7 @@
   color: rgba(68, 68, 68, 1);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -69,7 +70,7 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     margin-left: 110px;
-    margin-top: 87px;
+    margin-top: 71px;
   }
 }
 
@@ -80,7 +81,6 @@
 
   @media (min-width: $tablet-width) {
     column-gap: 42px;
-    margin-right: 203px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,7 +88,13 @@
   }
 }
 
+.stats-item {
+  margin-right: 20px;
+}
+
 .stats__container-items {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -110,7 +116,7 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 21px 6px;
+  padding: 15px 21px 12px;
   white-space: nowrap;
 
   &::before {
@@ -127,8 +133,8 @@
     @media (min-width: $tablet-width) {
       width: 162px;
       height: 72px;
-      left: -10px;
-      top: -5px;
+      left: 0;
+      top: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -139,6 +145,10 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 22px;
   }
 }
 
@@ -171,7 +181,6 @@
 .stats__sum {
   margin: 0;
   margin-top: 20px;
-  padding-bottom: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -182,6 +191,7 @@
     width: 174px;
     font-size: 20px;
     text-align: end;
+    margin-top: 6px;
   }
 
   @media (min-width: $desktop-width) {

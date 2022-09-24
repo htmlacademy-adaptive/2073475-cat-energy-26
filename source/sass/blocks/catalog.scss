@@ -19,6 +19,8 @@
   border-top: 1px solid rgba(235, 235, 235, 1);
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 46px;
     border: none;
     font-size: 60px;
     line-height: 60px;
@@ -40,7 +42,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
-    row-gap: 141px;
+    row-gap: 151px;
     column-gap: 60px;
     margin-bottom: 68px;
   }

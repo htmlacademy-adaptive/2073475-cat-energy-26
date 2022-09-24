@@ -30,6 +30,11 @@
   text-transform: uppercase;
   color: rgb(34, 34, 34);
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 163px;
     margin-right: 163px;
