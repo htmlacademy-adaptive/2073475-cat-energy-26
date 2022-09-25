@@ -139,7 +139,7 @@
   }
 
   &:focus {
-    border: 2px solid rgba(68, 68, 68, 1);
+    outline: 2px solid rgba(68, 68, 68, 1);
   }
 
   &--invalid {
@@ -291,7 +291,7 @@
     background-size: 30px 30px;
 
     &:focus {
-      border: 2px solid rgba(68, 68, 68, 1);
+      outline: 2px solid rgba(68, 68, 68, 1);
     }
 
     @media (min-width: $tablet-width) {
@@ -410,7 +410,7 @@
   background-size: 30px 30px;
 
   &:focus {
-    border: 2px solid rgba(68, 68, 68, 1);
+    outline: 2px solid rgba(68, 68, 68, 1);
   }
 
   @media (min-width: $tablet-width) {
@@ -436,7 +436,7 @@
     background-size: 30px 30px;
 
     &:focus + label::before {
-      border: 2px solid rgba(68, 68, 68, 1);
+      outline: 2px solid rgba(68, 68, 68, 1);
     }
 
     @media (min-width: $tablet-width) {

@@ -8,7 +8,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    padding-top: 330px;
+    padding-top: 341px;
   }
 }
 
@@ -65,7 +65,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 88px;
+    padding-top: 78px;
+    margin-bottom: 37px;
   }
 }
 
@@ -145,7 +146,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    width: 100%;
+    margin-bottom: 27px;
   }
 }
 
@@ -169,4 +171,8 @@
   transform: scaleX(1);
   transform-origin: center left;
   transition: transform 0.5s;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 23px;
+  }
 }
