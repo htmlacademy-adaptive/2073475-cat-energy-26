@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff" as="font" crossorigin="anonymous">
   </head>
   <body>
 
@@ -46,6 +48,9 @@
     <symbol viewBox="0 0 27 34" id="html">
       <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"/>
     </symbol>
+    <symbol viewBox="0 0 24 18" id="slider-toggle">
+      <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z"/>
+    </symbol>
   </svg>
 
     <header class="main-header">
@@ -57,7 +62,7 @@
         </picture>
           <img class="logo__text" src="img/logo-text-mobile.svg " srcset="img/logo-text-mobile@2x.svg 2x" width="100" height="18" alt="Кэт энерджи.">
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -130,10 +135,10 @@
                 <use href="#icon-leaf"></use>
               </svg>
             </p>
-            <span class="info__number">1</span>
+            <span class="info__number info__number--option-one">1</span>
           </div>
           <div class="info__item">
-            <p class="info__text">Выпускается в виде порошка,который нужно лишь залить кипятком и готово.
+            <p class="info__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
               <svg class="info__icon" width="29" height="31">
                 <use href="#icon-product"></use>
               </svg>
@@ -179,6 +184,27 @@
           <p class="stats__sum">Затраты на питание: <span class="stats__price">15 000 РУБ.</span></p>
           </div>
         </div>
+          <div class="stats__slider">
+            <div class="stats__slider-line">
+              <div class="stats__slider-toggle">
+                <svg class="stats__slider-arrows" width="24" height="18">
+                  <use href="#slider-toggle"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="stats__slider-item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/left-pic-tablet.png 1x, img/left-pic-tablet@2x.png 2x" width="560" height="512">
+                <img class="stats__slider-img stats__slider-img--before" src="img/left-pic-mobile.png" srcset="img/left-pic-mobile@2x.png 2x" alt="Полный котик." width="280" height="256">
+              </picture>
+            </div>
+            <div class="stats__slider-item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/right-pic-tablet.png 1x, img/right-pic-tablet@2x.png 2x" width="560" height="512">
+                <img class="stats__slider-img stats__slider-img--after" src="img/right-pic-mobile.png" srcset="img/right-pic-mobile@2x.png 2x" alt="Худой котик." width="280" height="256">
+              </picture>
+            </div>
+          </div>
       </section>
 
       <!-- Contacts -->
@@ -187,7 +213,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+          <div class="contacts__text"><p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p><span class="contacts__city">Санкт-Петербург</span></div>
         </div>
         <div class="contacts__map-wrapper">
           <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461629038!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1661802054583!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">

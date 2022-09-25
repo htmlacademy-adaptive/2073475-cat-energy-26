@@ -8,9 +8,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 76px;
     position: relative;
-    margin-bottom: 60px;
     display: flex;
     justify-content: space-evenly;
   }
@@ -24,12 +23,22 @@
   &::before {
     position: absolute;
     content: "";
+    top: 0;
+    left: 0;
     width: 100%;
     border-top: 2px solid rgba(104, 183, 56, 1);
+
+    @media (min-width: $tablet-width) {
+      top: 5px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 95px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 80px;
+    padding-bottom: 101px;
   }
 }
 
@@ -47,6 +56,9 @@
   top: -16px;
 
   @media (min-width: $tablet-width) {
+    width: 352px;
+    font-size: 36px;
+    line-height: 36px;
     margin-left: 30px;
     padding-left: 37px;
   }
