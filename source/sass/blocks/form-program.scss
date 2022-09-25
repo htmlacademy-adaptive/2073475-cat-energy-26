@@ -142,7 +142,7 @@
     border: 2px solid rgba(68, 68, 68, 1);
   }
 
-  &:invalid {
+  &--invalid {
     border: 1px solid rgba(255, 130, 130, 1);
   }
 
@@ -263,7 +263,7 @@
   background-repeat: no-repeat;
 
   &:focus {
-    border: 2px solid rgba(68, 68, 68, 1);
+    outline: 2px solid rgba(68, 68, 68, 1);
   }
 
   @media (min-width: $tablet-width) {

@@ -11,23 +11,6 @@
   min-height: 0;
 }
 
-.main-nav .site-list__item {
-  display: block;
-}
-
-.main-nav .site-list__item--main-page-active a {
-  padding-right: 21px;
-  padding-left: 21px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
-.main-nav .user-list__item {
-  display: block;
-}
-
 .main-nav__toggle {
   position: absolute;
   width: 24px;
