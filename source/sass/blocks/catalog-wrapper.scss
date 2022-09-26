@@ -18,7 +18,7 @@
 .catalog-wrapper__heading-container {
   position: relative;
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 44px;
 
   &::before {
     position: absolute;
@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 95px;
+    padding-bottom: 99px;
   }
 
   @media (min-width: $desktop-width) {

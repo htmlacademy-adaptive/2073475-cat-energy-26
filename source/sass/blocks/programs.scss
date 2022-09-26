@@ -8,7 +8,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    padding-top: 341px;
+    padding-top: 353px;
   }
 }
 
@@ -46,8 +46,8 @@
       width: 200px;
       height: 200px;
       border-radius: 100px;
-      left: 450px;
-      top: 81px;
+      left: 448px;
+      top: 89px;
     }
 
     @media (min-width: $desktop-width) {
@@ -55,18 +55,22 @@
       width: 100px;
       height: 100px;
       left: 52px;
-      top: 59px;
+      top: 48px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 64px 0 57px 52px;
-    margin-bottom: 44px;
+    padding: 74px 0 59px 52px;
+    margin-bottom: 30px;
+
+    &--option {
+      padding-top: 77px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 78px;
-    margin-bottom: 37px;
+    padding-top: 77px;
+    margin-bottom: 31px;
   }
 }
 
@@ -79,15 +83,15 @@
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
-    top: 71px;
-    left: 481px;
+    top: 78px;
+    left: 476px;
   }
 
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 130px;
-    top: 37px;
-    left: 65px;
+    top: 26px;
+    left: 67px;
   }
 
   &--option {
@@ -97,18 +101,19 @@
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 112px;
-      top: 120px;
-      left: 410px;
+      top: 134px;
+      left: 412px;
     }
 
     @media (min-width: $desktop-width) {
       width: 134px;
       height: 56px;
-      top: 80px;
-      left: 35px;
+      top: 68px;
+      left: 33px;
     }
   }
 }
+
 
 .programs__heading {
   margin: 0 0 28px 70px;
@@ -120,13 +125,14 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
+    margin-bottom: 25px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
   }
 }
 
@@ -139,14 +145,14 @@
   color: rgba(68, 68, 68, 1);
 
   @media (min-width: $tablet-width) {
-    margin: 24px 316px 48px 0;
+    margin: 24px 316px 49px 0;
     font-size: 16px;
     line-height: 24px;
     width: 340px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 95%;
     margin-bottom: 27px;
   }
 }
@@ -172,7 +178,12 @@
   transform-origin: center left;
   transition: transform 0.5s;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-left: 23px;
+    margin-left: 24px;
+    padding-bottom: 4px;
   }
 }

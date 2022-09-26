@@ -9,8 +9,8 @@
 }
 
 .form-program__heading-main {
-  margin: 0 20px 37px 20px;
-  padding-top: 27px;
+  margin: 0 20px 36px 20px;
+  padding-top: 25px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -86,7 +86,7 @@
 .form-program__item {
   display: flex;
   align-items: center;
-  margin: 0 20px 13px 20px;
+  margin: 0 20px 13px 18px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -158,7 +158,7 @@
   border: none;
 
   &:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 9px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 47px;
@@ -173,11 +173,12 @@
 
 .form-program__list {
   margin: 0;
-  padding: 20px 0 20px;
+  padding: 24px 0 24px;
   margin-bottom: 26px;
   list-style-type: none;
   border-top: 1px solid rgba(217, 217, 217, 1);
   border-bottom: 1px solid rgba(217, 217, 217, 1);
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     padding: 25px 0 26px 25px;
@@ -233,7 +234,6 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-left: 43px;
-  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -262,10 +262,6 @@
   background-size: 30px 30px;
   background-repeat: no-repeat;
 
-  &:focus {
-    outline: 2px solid rgba(68, 68, 68, 1);
-  }
-
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
@@ -280,6 +276,10 @@
 }
 
 .form-program__radio-input[type="radio"] {
+  &:focus + .form-program__radio-box {
+    outline: 2px solid rgba(68, 68, 68, 1);
+  }
+
   &:checked + .form-program__radio-box {
     position: absolute;
     content: "";
@@ -290,9 +290,6 @@
     background-image: url("../img/icons/radio-checked.svg");
     background-size: 30px 30px;
 
-    &:focus {
-      outline: 2px solid rgba(68, 68, 68, 1);
-    }
 
     @media (min-width: $tablet-width) {
       position: absolute;
@@ -418,14 +415,18 @@
     content: "";
     width: 40px;
     height: 40px;
-    left: 0;
-    top: -2px;
+    left: -3px;
+    top: -8px;
     background-image: url("../img/icons/check-box-tablet.svg");
     background-size: 40px 40px;
   }
 }
 
 .form-program__checkbox-input[type="checkbox"] {
+  &:focus + .form-program__checkbox {
+    outline: 2px solid rgba(68, 68, 68, 1);
+  }
+
   &:checked + .form-program__checkbox {
     position: absolute;
     width: 30px;
@@ -434,10 +435,6 @@
     top: -2px;
     background-image: url("../img/icons/checked.svg");
     background-size: 30px 30px;
-
-    &:focus + label::before {
-      outline: 2px solid rgba(68, 68, 68, 1);
-    }
 
     @media (min-width: $tablet-width) {
       position: absolute;

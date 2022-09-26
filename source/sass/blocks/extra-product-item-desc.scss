@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    margin-right: 38px;
+    text-align: end;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +20,11 @@
   font-size: 14px;
   line-height: 14px;
   color: rgb(68, 68, 68);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 132px;

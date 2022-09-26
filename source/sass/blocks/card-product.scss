@@ -1,6 +1,4 @@
 .card-product {
-  border-top: 1px solid rgba(235, 235, 235, 1);
-
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 140px 30px 39px 30px;
@@ -10,7 +8,7 @@
 
 .card-product__heading {
   width: 76px;
-  margin: 19px 0 15px;
+  margin: 0 0 15px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -20,49 +18,66 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    margin: 21px auto 0;
     font-size: 20px;
     line-height: 24px;
-    width: 127px;
+    width: 130px;
     text-align: center;
   }
 }
 
 .card-product__container {
-  display: flex;
+  position: relative;
+  display: grid;
+  grid-template-columns: 141px 141px;
+  column-gap: 20px;
 
   @media (min-width: $tablet-width) {
+    display: block;
     flex-direction: column;
     align-items: center;
   }
 }
 
 .card-product__image {
-  margin: 33px 36px 25px 56px;
+  position: absolute;
+  top: 15px;
+  left: 56px;
 
   &--big {
-    margin-left: 48px;
+    top: 11px;
+    left: 50px;
   }
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    margin: 0;
-    top: -85px;
-    left: 85px;
+    top: -206px;
+    left: 52px;
 
     &--big {
-      top: -94px;
+      top: -233px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    left: 40px;
+    left: 13px;
+    top: -215px;
+
+    &--big {
+      top: -241px;
+    }
   }
 }
 
 .card-product__button {
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: $tablet-width) {
-    margin-top: 9px;
-    padding: 13px 0;
+    padding: 10px 0;
+    width: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
   }
 }

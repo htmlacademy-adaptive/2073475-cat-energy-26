@@ -41,19 +41,21 @@
   &--main-page {
     @media (min-width: $tablet-width) {
       position: absolute;
-      width: 243px;
+      width: 244px;
       top: 274px;
       left: 120px;
       padding-top: 18px;
-      padding-bottom: 19px;
+      padding-bottom: 16px;
+      font-size: 20px;
+      line-height: 20px;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 20px;
       line-height: 20px;
-      width: 242px;
-      top: 325px;
-      left: 191px;
+      width: 244px;
+      top: 323px;
+      left: 190px;
     }
   }
 
@@ -70,11 +72,17 @@
   }
 
   &--show-more {
+    font-size: 16px;
+    line-height: 20px;
     margin: 0 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: rgb(242, 242, 242);
     color: rgb(68, 68, 68);
+
+    @media (min-width: $tablet-width) {
+      margin: 0 39px;
+    }
 
     &:hover {
       background-color: rgb(235, 235, 235);

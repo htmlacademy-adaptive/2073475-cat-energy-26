@@ -1,6 +1,6 @@
 .show-more {
   position: relative;
-  margin-top: 31px;
+  margin-top: 60px;
 
   @media (min-width: $tablet-width) {
     margin-top: 112px;
@@ -10,11 +10,26 @@
 .show-more__icon {
   position: absolute;
   content: "";
-  top: -50px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icons/show-more-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  top: -54px;
   left: 145px;
 
+  @media (min-width: $tablet-width) {
+    top: -79px;
+    left: 132px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icons/show-more-tablet.svg");
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+  }
+
   @media (min-width: $desktop-width) {
-    left: 109px;
+    left: 91px;
   }
 }
 
@@ -24,13 +39,16 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
     width: 134px;
     margin: 49px auto 23px;
-    padding-top: 49px;
+    padding-top: 32px;
   }
 }
 
@@ -38,6 +56,9 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

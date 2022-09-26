@@ -2,12 +2,11 @@
 .card-desc {
   display: grid;
   grid-template-columns: 70px 70px;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 125px 125px;
-    margin-bottom: 33px;
-    margin-top: 20px;
+    margin: 14px 0 32px 8px;
   }
 
   @media (min-width: $desktop-width) {
