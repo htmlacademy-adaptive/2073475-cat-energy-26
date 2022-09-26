@@ -2,8 +2,8 @@
   margin: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px 35px;
-    padding-bottom: 4px;
+    margin: 0;
+    padding-bottom: 76px;
     border-bottom: 1px solid rgba(230, 230, 230, 1);
   }
 
@@ -24,8 +24,16 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
+    margin-left: 30px;
     font-size: 60px;
     line-height: 60px;
+    padding-top: 15px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -33,17 +41,20 @@
   margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 30px;
     display: grid;
     grid-template-columns: 230px 280px;
     column-gap: 153px;
-    row-gap: 94px;
+    row-gap: 73px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 230px 246px 248px 250px;
+    column-gap: 87px;
     border: none;
     padding: 0;
+    margin: 0;
     margin-bottom: 39px;
   }
 }
@@ -63,8 +74,22 @@
   left: -65px;
 
   @media (min-width: $tablet-width) {
-    top: -87px;
-    left: 25px;
+    top: -88px;
+    left: 23px;
+
+    &--product {
+      top: -89px;
+      left: 25px;
+    }
+
+    &--tableware {
+      left: 27px;
+    }
+
+    &--clock {
+      top: -90px;
+      left: 25px;
+    }
   }
 }
 
@@ -88,7 +113,7 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
-      top: -115px;
+      top: -113px;
       left: 0;
     }
   }
@@ -101,7 +126,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 136px;
+    margin-top: 185px;
+
+    &--option-two {
+      margin-left: 8px;
+    }
+
+    &--option-four {
+      left: -10px;
+    }
   }
 }
 
@@ -119,11 +152,35 @@
     right: 4px;
 
     &--option-one {
-      right: -31px;
+      left: 118px;
+      top: -27px;
+    }
+
+    &--option-two {
+      left: 113px;
+      top: -27px;
     }
 
     &--option-three {
       right: -15px;
+    }
+
+    &--option-four {
+      top: -26px;
+      right: 31px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 12px;
+    left: 119px;
+
+    &--option-three {
+      left: 113px;
+    }
+
+    &--option-four {
+      left: 104px;
     }
   }
 }
